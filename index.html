@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #6a6b6d;
+        --font-family: "Poppins", sans-serif;
+        /* --base-font-size: 16px; */
+      }
+      .container {
+        max-width: 1280px;
+        margin-inline: auto;
+      }
+      .cardContainer {
+        border: 1px solid;
+        width: min-content;
+        margin-inline: auto;
+        position: relative;
+      }
+      img {
+        width: 460px;
+        max-width: 100%;
+        display: block;
+      }
+      .cardContainer .card_bg {
+        max-width: revert;
+        aspect-ratio: 1 /1.6;
+      }
+      .cardContainer > *:not(.card_bg) {
+        position: absolute;
+      }
+      .card_logo {
+        width: 70px;
+        aspect-ratio: 2 / 1;
+        height: auto;
+        top: 6rem;
+        right: 3rem;
+      }
+      .content {
+        top: 11rem;
+        text-align: center;
+      }
+      .content h1 {
+        font-family: var(--font-family);
+        font-size: clamp(1rem, 8vw, 2.5rem);
+        line-height: 20px;
+        color: rgb(5, 5, 117);
+        font-weight: 900;
+      }
+      .content span {
+        font-size: clamp(0.5rem, 6vw, 1rem);
+        font-weight: 700;
+      }
+      .content .subHeading {
+        padding-top: 1rem;
+        font-size: clamp(0.5rem, 7vw, 1rem);
+        color: var(--primary-color);
+        font-family: var(--font-family);
+      }
+      .content h2 {
+        padding-top: 1rem;
+        font-size: clamp(0.9rem, 8vw, 2rem);
+        color: rgb(5, 5, 117);
+        font-weight: 700;
+        font-family: "Merriweather", serif;
+      }
+      .content .address {
+        padding-top: 1rem;
+        font-size: clamp(0.8rem, 8vw, 1rem);
+        color: var(--primary-color);
+        font-family: var(--font-family);
+      }
+      .content .para1 {
+        padding-top: 1rem;
+        font-size: clamp(0.8rem, 8vw, 1rem);
+        color: var(--primary-color);
+        font-family: var(--font-family);
+      }
+      .content .lists {
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      .sign {
+        width: 110px;
+      }
+      ul {
+        list-style-type: none;
+        text-align: start;
+        padding-left: 1.5rem;
+      }
+      .qr-code{
+        width: 80px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardContainer">
+        <img src="asset/cmp3.webp" alt="" class="card_bg" />
+        <img src="asset/cmp2.webp" alt="" class="card_logo" />
+        <div class="content">
+          <h1>CERTIFICATE<br /><span>OF PARTNERSHIP</span></h1>
+          <p class="subHeading">Jobaskit, Hereby Certificates that</p>
+          <h2 class="">Institute Name</h2>
+          <p class="address">
+            NO.1 Third Floor, 4th Main Road, Kasturibai Nagar,
+            Adyar,Chennai-600020
+          </p>
+          <p class="para1">
+            Is the recognized as the Official Training Partner of Jobaskit.In
+            the scope of working in thearea of skill building and Job Placement
+          </p>
+          <div class="lists">
+            <ul>
+              <li>Certificate Number: 00000014</li>
+              <li>Issue date : 28/ 11/ 2023</li>
+              <li>Registration Date : 28/11/2023</li>
+              <li>Expiration Date : 27/02/2024</li>
+            </ul>
+            <img class="sign" src="asset/cmp.png" />
+          </div>
+          <img src="asset/cmp4.webp" class="qr-code" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
